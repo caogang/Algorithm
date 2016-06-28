@@ -11,7 +11,13 @@
 #include "stringMarvinCao.h"
 
 int main(void) {
-	printf("1.test stringRotate.cpp\n");
-	stringPrint();
+	printf("1 start a test for stringRotate.cpp\n");
+
+    printf("\n");
+	printf("1.1 test stringRotate\n");
+	stringRotate(NULL, 0, 0);
+	printf("\n");
+
+	printf("1 end a test for  stringRotate.cpp\n");
 	return EXIT_SUCCESS;
 }

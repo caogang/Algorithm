@@ -7,7 +7,7 @@
 
 #include "stringMarvinCao.h"
 
-void stringPrint()
+void stringRotate(char* str, int n, int m)
 {
-    printf("string!\n");
+    printf("string rotate.\n");
 }
