@@ -7,8 +7,6 @@
 
 #ifndef STRINGMARVINCAO_H_
 #define STRINGMARVINCAO_H_
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * Description: Rotate the string using brute-force algorithm.
@@ -51,5 +49,19 @@ int stringRotateThreeStepRevert(char* str, int n, int m);
  *      0:   rotate success.
  */
 int stringRotateThreeStepRevertUsingSpaceDelimiter(char* str, int n);
+
+/**
+ * Description: whether every char of the short string is included in the long string using brute-force algorithm.
+ * Input:
+ *      str1: the long string
+ *      n1:   the length of the str1
+ *      str2: the short string
+ *      n2:   the length of the str2
+ * Return:
+ *      -1:   parameters error.
+ *      0:    true.
+ *      1:    false.
+ */
+int stringContainBrute(const char* str1, int n1, const char* str2, int n2);
 
 #endif /* STRINGMARVINCAO_H_ */

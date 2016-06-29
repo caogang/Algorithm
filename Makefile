@@ -1,6 +1,6 @@
 CXXFLAGS =	-O2 -g -Wall -fmessage-length=0
 
-OBJS =		Algorithm.o stringRotate.o
+OBJS =		Algorithm.o stringRotate.o stringContain.o
 
 LIBS =
 
