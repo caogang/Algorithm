@@ -64,4 +64,18 @@ int stringRotateThreeStepRevertUsingSpaceDelimiter(char* str, int n);
  */
 int stringContainBrute(const char* str1, int n1, const char* str2, int n2);
 
+/**
+ * Description: whether every char of the short string is included in the long string using pre-sorted algorithm.
+ * Input:
+ *      str1: the long string
+ *      n1:   the length of the str1
+ *      str2: the short string
+ *      n2:   the length of the str2
+ * Return:
+ *      -1:   parameters error.
+ *      0:    true.
+ *      1:    false.
+ */
+int stringContainSort(const char* str1, int n1, const char* str2, int n2);
+
 #endif /* STRINGMARVINCAO_H_ */

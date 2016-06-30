@@ -14,8 +14,8 @@ int main(void) {
 
     printf("#########################################\n");
 	printf("1 start a test for stringRotate.cpp\n");
-
     printf("\n");
+
 	printf("1.1 test stringRotateBrute\n");
     char strBrute[10] = "MarvinCao";
 	if (stringRotateBrute(strBrute, 9, 6) == 0)
@@ -56,12 +56,25 @@ int main(void) {
 
 	printf("#########################################\n");
     printf("2 start a test for stringContain.cpp\n");
-
     printf("\n");
+
     printf("2.1 test stringContainBrute\n");
     char str211[] = "MarvinCao";
     char str212[] = "Cao";
     if (stringContainBrute(str211, strlen(str211), str212, strlen(str212)) == 0)
+    {
+        printf("pass test.\n");
+    }
+    else
+    {
+        printf("error test.\n");
+    }
+    printf("\n");
+
+    printf("2.2 test stringContainSort\n");
+    char str221[] = "MarvinCao123123";
+    char str222[] = "naoMMMMMni3";
+    if (stringContainSort(str221, strlen(str221), str222, strlen(str222)) == 0)
     {
         printf("pass test.\n");
     }
