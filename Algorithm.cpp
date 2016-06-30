@@ -73,7 +73,7 @@ int main(void) {
 
     printf("2.2 test stringContainSort\n");
     char str221[] = "MarvinCao123123";
-    char str222[] = "naoMMMMMni3";
+    char str222[] = "nar321123321rrrrroMMM3";
     if (stringContainSort(str221, strlen(str221), str222, strlen(str222)) == 0)
     {
         printf("pass test.\n");
