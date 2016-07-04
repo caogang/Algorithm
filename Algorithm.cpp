@@ -59,8 +59,8 @@ int main(void) {
     printf("\n");
 
     printf("2.1 test stringContainBrute\n");
-    char str211[] = "MarvinCao";
-    char str212[] = "Cao";
+    char str211[] = "MARVINCAO";
+    char str212[] = "CAO";
     if (stringContainBrute(str211, strlen(str211), str212, strlen(str212)) == 0)
     {
         printf("pass test.\n");
@@ -72,9 +72,22 @@ int main(void) {
     printf("\n");
 
     printf("2.2 test stringContainSort\n");
-    char str221[] = "MarvinCao123123";
-    char str222[] = "nar321123321rrrrroMMM3";
+    char str221[] = "MARVINCAO";
+    char str222[] = "NARRRRRRRRMMM";
     if (stringContainSort(str221, strlen(str221), str222, strlen(str222)) == 0)
+    {
+        printf("pass test.\n");
+    }
+    else
+    {
+        printf("error test.\n");
+    }
+    printf("\n");
+
+    printf("2.3 test stringContainPrimeNumMul\n");
+    char str231[] = "MARVINCAO";
+    char str232[] = "NARRRRROOOIIMMM";
+    if (stringContainPrimeNumMul(str231, strlen(str231), str232, strlen(str232)) == 0)
     {
         printf("pass test.\n");
     }

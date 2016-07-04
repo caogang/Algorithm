@@ -80,5 +80,46 @@ int stringContainSort(const char* str1, int n1, const char* str2, int n2)
     return 0;
 }
 
+/******************************************************/
+int stringContainPrimeNumMul(const char* str1, int n1, const char* str2, int n2)
+{
+    /*correspond to every capital letter*/
+    const int primeNum[26] = {2, 3, 5, 7, 11, 13,
+                              17, 19, 23, 29, 31,
+                              37, 41, 43, 47, 53,
+                              59, 61, 67, 71, 73,
+                              79, 83, 89, 97, 101};
+    int i = 0;
+    long long str1Mul = 1;
 
+    if (str1 == NULL || str2 == NULL)
+    {
+        return -1;
+    }
+
+    for (i = 0; i < n1; i++)
+    {
+        int x = primeNum[ str1[i] - 'A' ];
+
+        /*Do not multiply the x if the letter to which the x is correspond has been appeared*/
+        /*This can decrease the total result str1Mul*/
+        if (str1Mul % x)
+        {
+            str1Mul *= x;
+        }
+    }
+
+    printf("the multiply prime number of '%s': %lld \n", str1, str1Mul);
+
+    for (i = 0; i < n2; i++)
+    {
+        if (str1Mul % primeNum[ str2[i] - 'A' ])
+        {
+            return 1;
+        }
+    }
+
+    return 0;
+
+}
 

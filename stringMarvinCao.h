@@ -53,9 +53,9 @@ int stringRotateThreeStepRevertUsingSpaceDelimiter(char* str, int n);
 /**
  * Description: whether every char of the short string is included in the long string using brute-force algorithm.
  * Input:
- *      str1: the long string
+ *      str1: the long string only containing capital letter
  *      n1:   the length of the str1
- *      str2: the short string
+ *      str2: the short string only containing capital letter
  *      n2:   the length of the str2
  * Return:
  *      -1:   parameters error.
@@ -67,9 +67,9 @@ int stringContainBrute(const char* str1, int n1, const char* str2, int n2);
 /**
  * Description: whether every char of the short string is included in the long string using pre-sorted algorithm.
  * Input:
- *      str1: the long string
+ *      str1: the long string only containing capital letter
  *      n1:   the length of the str1
- *      str2: the short string
+ *      str2: the short string only containing capital letter
  *      n2:   the length of the str2
  * Return:
  *      -1:   parameters error.
@@ -77,5 +77,19 @@ int stringContainBrute(const char* str1, int n1, const char* str2, int n2);
  *      1:    false.
  */
 int stringContainSort(const char* str1, int n1, const char* str2, int n2);
+
+/**
+ * Description: whether every char of the short string is included in the long string using pre-sorted algorithm.
+ * Input:
+ *      str1: the long string only containing capital letter
+ *      n1:   the length of the str1
+ *      str2: the short string only containing capital letter
+ *      n2:   the length of the str2
+ * Return:
+ *      -1:   parameters error.
+ *      0:    true.
+ *      1:    false.
+ */
+int stringContainPrimeNumMul(const char* str1, int n1, const char* str2, int n2);
 
 #endif /* STRINGMARVINCAO_H_ */
