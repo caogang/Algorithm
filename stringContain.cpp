@@ -123,3 +123,36 @@ int stringContainPrimeNumMul(const char* str1, int n1, const char* str2, int n2)
 
 }
 
+/******************************************************/
+int stringContainBitOpr(const char* str1, int n1, const char* str2, int n2)
+{
+    /*use a integer signature commonly consisting of 32 bits or 64 bits for the sake of containing 26 bits*/
+    /*to identify every capital letter*/
+    int hash = 0;
+    int i = 0;
+
+    if (str1 == NULL || str2 == NULL)
+    {
+        return -1;
+    }
+
+    for (i = 0; i < n1; i++)
+    {
+        hash |= 1 << (str1[i] - 'A');
+    }
+
+    printf("the hash signature = %d\n", hash);
+
+    for (i = 0; i < n2; i++)
+    {
+        /*verify the signature*/
+        if ((hash & (1 << (str2[i] - 'A'))) == 0)
+        {
+            return 1;
+        }
+    }
+
+    return 0;
+
+}
+

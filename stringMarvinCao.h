@@ -79,7 +79,7 @@ int stringContainBrute(const char* str1, int n1, const char* str2, int n2);
 int stringContainSort(const char* str1, int n1, const char* str2, int n2);
 
 /**
- * Description: whether every char of the short string is included in the long string using pre-sorted algorithm.
+ * Description: whether every char of the short string is included in the long string using prime-number multiplication algorithm.
  * Input:
  *      str1: the long string only containing capital letter
  *      n1:   the length of the str1
@@ -91,5 +91,19 @@ int stringContainSort(const char* str1, int n1, const char* str2, int n2);
  *      1:    false.
  */
 int stringContainPrimeNumMul(const char* str1, int n1, const char* str2, int n2);
+
+/**
+ * Description: whether every char of the short string is included in the long string using bit operation algorithm.
+ * Input:
+ *      str1: the long string only containing capital letter
+ *      n1:   the length of the str1
+ *      str2: the short string only containing capital letter
+ *      n2:   the length of the str2
+ * Return:
+ *      -1:   parameters error.
+ *      0:    true.
+ *      1:    false.
+ */
+int stringContainBitOpr(const char* str1, int n1, const char* str2, int n2);
 
 #endif /* STRINGMARVINCAO_H_ */

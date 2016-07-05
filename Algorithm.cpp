@@ -97,6 +97,19 @@ int main(void) {
     }
     printf("\n");
 
+    printf("2.4 test stringContainBitOpr\n");
+    char str241[] = "MARVINCAO";
+    char str242[] = "NAAHHIMMM";
+    if (stringContainBitOpr(str241, strlen(str241), str242, strlen(str242)) == 0)
+    {
+        printf("pass test.\n");
+    }
+    else
+    {
+        printf("error test.\n");
+    }
+    printf("\n");
+
     printf("2 end a test for stringContain.cpp\n");
 
 	return 0;
