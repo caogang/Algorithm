@@ -4,7 +4,7 @@
  *  Created on: 2016年6月27日
  *      Author: MarvinCao
  */
-
+#include <stdio.h>
 #include "stringMarvinCao.h"
 
 /*********************************************/

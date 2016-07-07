@@ -7,8 +7,6 @@
 
 #ifndef STRINGMARVINCAO_H_
 #define STRINGMARVINCAO_H_
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * Description: Rotate the string using brute-force algorithm.
@@ -51,5 +49,74 @@ int stringRotateThreeStepRevert(char* str, int n, int m);
  *      0:   rotate success.
  */
 int stringRotateThreeStepRevertUsingSpaceDelimiter(char* str, int n);
+
+/**
+ * Description: whether every char of the short string is included in the long string using brute-force algorithm.
+ * Input:
+ *      str1: the long string only containing capital letter
+ *      n1:   the length of the str1
+ *      str2: the short string only containing capital letter
+ *      n2:   the length of the str2
+ * Return:
+ *      -1:   parameters error.
+ *      0:    true.
+ *      1:    false.
+ */
+int stringContainBrute(const char* str1, int n1, const char* str2, int n2);
+
+/**
+ * Description: whether every char of the short string is included in the long string using pre-sorted algorithm.
+ * Input:
+ *      str1: the long string only containing capital letter
+ *      n1:   the length of the str1
+ *      str2: the short string only containing capital letter
+ *      n2:   the length of the str2
+ * Return:
+ *      -1:   parameters error.
+ *      0:    true.
+ *      1:    false.
+ */
+int stringContainSort(const char* str1, int n1, const char* str2, int n2);
+
+/**
+ * Description: whether every char of the short string is included in the long string using prime-number multiplication algorithm.
+ * Input:
+ *      str1: the long string only containing capital letter
+ *      n1:   the length of the str1
+ *      str2: the short string only containing capital letter
+ *      n2:   the length of the str2
+ * Return:
+ *      -1:   parameters error.
+ *      0:    true.
+ *      1:    false.
+ */
+int stringContainPrimeNumMul(const char* str1, int n1, const char* str2, int n2);
+
+/**
+ * Description: whether every char of the short string is included in the long string using bit operation algorithm.
+ * Input:
+ *      str1: the long string only containing capital letter
+ *      n1:   the length of the str1
+ *      str2: the short string only containing capital letter
+ *      n2:   the length of the str2
+ * Return:
+ *      -1:   parameters error.
+ *      0:    true.
+ *      1:    false.
+ */
+int stringContainBitOpr(const char* str1, int n1, const char* str2, int n2);
+
+/**
+ * Description: find the anagram string of str from the dictionary
+ * Input:
+ *      dicFile: dictionary fileName
+ *      str:  the source string
+ *      n1:   the length of the str
+ * Return:
+ *      -1:   parameters error.
+ *      0:    find successfully.
+ *      1:    no anagram string of str.
+ */
+int findAnagramString(const char* dicFile, const char* str, int n1);
 
 #endif /* STRINGMARVINCAO_H_ */
