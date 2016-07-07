@@ -40,7 +40,7 @@ int main(void) {
     }
     printf("\n");
 
-    printf("1.3 test stringRotateThreeStepRevertUsingSpaceDelimiter\n");
+    printf("1.* test stringRotateThreeStepRevertUsingSpaceDelimiter\n");
     char strUsingSpaceDelimiter[] = "I am a student.";
     if (stringRotateThreeStepRevertUsingSpaceDelimiter(strUsingSpaceDelimiter, strlen(strUsingSpaceDelimiter)) == 0)
     {
@@ -111,6 +111,25 @@ int main(void) {
     printf("\n");
 
     printf("2 end a test for stringContain.cpp\n");
+
+    printf("#########################################\n");
+    printf("3 start a test for stringAnagram.cpp\n");
+    printf("\n");
+
+    printf("3.* test findAnagramString\n");
+    char dic3[] = "dicAnagram.txt";
+    char str3[] = "noavaMCir";
+    if (findAnagramString(dic3, str3, strlen(str3)) == 0)
+    {
+        printf("pass test.\n");
+    }
+    else
+    {
+        printf("error test.\n");
+    }
+    printf("\n");
+
+    printf("3 end a test for stringContain.cpp\n");
 
 	return 0;
 }

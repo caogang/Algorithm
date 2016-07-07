@@ -106,4 +106,17 @@ int stringContainPrimeNumMul(const char* str1, int n1, const char* str2, int n2)
  */
 int stringContainBitOpr(const char* str1, int n1, const char* str2, int n2);
 
+/**
+ * Description: find the anagram string of str from the dictionary
+ * Input:
+ *      dicFile: dictionary fileName
+ *      str:  the source string
+ *      n1:   the length of the str
+ * Return:
+ *      -1:   parameters error.
+ *      0:    find successfully.
+ *      1:    no anagram string of str.
+ */
+int findAnagramString(const char* dicFile, const char* str, int n1);
+
 #endif /* STRINGMARVINCAO_H_ */
